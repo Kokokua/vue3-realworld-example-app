@@ -1,13 +1,8 @@
-name: Test
-
+name: deploy vue 
 on:
   push:
-    paths-ignore:
-      - '**.md'
-
-env:
-  CI: true
-
+    branches:
+      - master
 jobs:
     deploy-app:
         runs-on: ubuntu-latest
